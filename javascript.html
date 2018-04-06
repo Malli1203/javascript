@@ -1,22 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Javascript Example</title>
-<script>
-function substitute(){
-var myValue = document.getElementById("myTextbox").value;
-if(myValue.length == 0){
-alert("Please enter a real value in the text box");
-return;
-}
-var myName = document.getElementById("name");
-myName.innerHTML = myValue;
-}
-</script>
+<meta charset=utf-8 />
+<title>JS nested for loop example</title>
 </head>
 <body>
-<h1 id="name">Javascript Example</h1>
-<input type="text" id="myTextbox">
-<input type="button" value="submit" onclick="substitute()"/>
+<h1> Javascript Example</h1>
+<script>
+var x,y,chr;
+for(x=1; x <=6; x++)
+{
+   for (y=1; y < x; y++)
+     {
+    chr=chr+("*");        
+      }
+ console.log(chr);
+ chr='';    
+}
+</script>
+  
 </body>
 </html>
