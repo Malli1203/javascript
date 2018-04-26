@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+$(document).ready(function() {
+$('label.required').append('&nbsp;<strong>*</strong>&nbsp;');
+$(".required").each().prev().not('input').not('br').not
+('select').append(' * ');
+});
+</script>
+<body>
+<form>
+<label for="FirstName'>LastName</label>
+<input id="FirstName" class="required" />
+<label for="LastName">LastName</label>
+<input id="LastName" class="required" />
+</form>
+</body>
+</html>

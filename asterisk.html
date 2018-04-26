@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>
+		Assignment
+	</title>
+	<link rel="stylesheet"  href="javascript/aster.css">
+	<script type="text/javascript">
+	function aster(fn, ast)
+	{
+		if(fn.value.length==0)
+			ast.style.visibility="visible";
+	}
+		
+	</script>
+</head>
+<body>
+  <form>
+	<table border="1">
+		<tr>
+			<td colspan="3"><p>Create Account</p></td>
+		</tr>
+		<tr>
+			<td>First Name</td>
+			<td><input type="text" id="fn"></td>
+			<td><p id="ast1">*</p></td>
+		</tr>
+		<tr>
+			<td>Last Name</td>
+			<td><input type="text" id="ln"></td>
+			<td><p id="ast2" value="*">*</p></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="text" id="email"></td>
+			<td><p id="ast3">*</p></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type="password" id="pass"></td>
+			<td><p id="ast4">*</p></td>
+		</tr>
+		<tr>
+			<td colspan="3"><input type="submit" value="Submit" onclick="aster(document.getElementById('fn', 'ast'))"/> </td>
+	</table>
+  </form>
+</body>
+</html>
+/*External CSS*/
+#ast1
+{
+	color:red;
+	visibility:hidden;
+}

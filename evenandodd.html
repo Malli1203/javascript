@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Use recursion to determine if a number is even</title>
+</head>
+<body>
+<h2>W3resources</h2>
+<script>
+function is_even_recursion(number)
+{
+  if (number < 0) 
+  {
+    number = Math.abs(number);
+  }
+  if (number===0) 
+  {
+    return true;
+  }
+  if (number===1) 
+  {
+    return false;
+  }
+  else 
+  {
+    number = number - 2;
+    return is_even_recursion(number);
+  }
+}
+console.log(is_even_recursion(234)); //true
+console.log(is_even_recursion(-45)); // false
+console.log(is_even_recursion(-45)); // false
+
+</script>
+</body>
+</html>
