@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+    function ask(question, yes, no){
+	 if(comfirm(question)) yes()
+	 else no();
+	}
+	function showOk(){
+	alert( "You Agreed." );
+	}
+	function showCancel(){
+	alert( "You canceled the execution." );
+	}
+	 // usage: functions showOk, showCancel are passed as arguments to ask
+    ask("Do you agree?", showOk, showCancel);
+	
+  </script>
+</body>
+
+</html>
